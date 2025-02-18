@@ -61,7 +61,8 @@ const FunInterface = () => {
 
       {/* No Button */}
       <button
-        onMouseEnter={handleNoHover}
+              onMouseEnter={handleNoHover}
+              onTouchStart={handleNoHover}
         style={{
           position: "fixed",
           ...noButtonPosition,
