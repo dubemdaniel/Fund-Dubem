@@ -54,7 +54,7 @@ const FunInterface = () => {
       {/* Yes Button */}
       <button
         onClick={handleYesClick}
-        className="fixed top-1/2 left-1/4 transform -translate-x-1/2 -translate-y-1/2 bg-purple-600 text-white px-8 py-3 rounded-lg text-xl hover:bg-purple-700 transition-colors"
+        className="fixed top-1/2 left-1/4  transform -translate-x-1/2 -translate-y-1/2 bg-purple-600 text-white px-8 py-3 rounded-lg text-xl hover:bg-purple-700 transition-colors"
       >
         Yes
       </button>
@@ -204,6 +204,13 @@ const FunInterface = () => {
         .animate-fall {
           position: absolute;
         }
+            .custom-gradient {
+    background: linear-gradient(180deg, 
+      rgb(0, 0, 0) 0%,
+      rgba(17, 0, 32, 0.95) 35%,
+      rgba(25, 0, 47, 0.85) 100%
+    );
+  }
       `}</style>
     </div>
   );
