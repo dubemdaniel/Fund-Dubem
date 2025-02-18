@@ -61,8 +61,8 @@ const FunInterface = () => {
 
       {/* No Button */}
       <button
-              onMouseEnter={handleNoHover}
-              onTouchStart={handleNoHover}
+        onMouseEnter={handleNoHover}
+        onTouchStart={handleNoHover}
         style={{
           position: "fixed",
           ...noButtonPosition,
@@ -141,38 +141,45 @@ const FunInterface = () => {
         )}
       </AnimatePresence>
 
-          {/* Thank You Message */}
-          <AnimatePresence>
-      {showThankYou && (
-        <motion.div    initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }} className="fixed inset-0 flex items-center justify-center pointer-events-none">
-          <motion.div   initial={{ scale: 0.5, opacity: 0, y: 50 }}
-              animate={{ 
-                scale: 1, 
-                opacity: 1, 
+      {/* Thank You Message */}
+      <AnimatePresence>
+        {showThankYou && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 flex items-center justify-center pointer-events-none"
+          >
+            <motion.div
+              initial={{ scale: 0.5, opacity: 0, y: 50 }}
+              animate={{
+                scale: 1,
+                opacity: 1,
                 y: 0,
                 transition: {
                   type: "spring",
                   damping: 10,
-                  stiffness: 100
-                }
+                  stiffness: 100,
+                },
               }}
-              exit={{ 
-                scale: 0.8, 
-                opacity: 0, 
+              exit={{
+                scale: 0.8,
+                opacity: 0,
                 y: -50,
                 transition: {
-                  duration: 0.7
-                }
-              }} className="bg-white bg-opacity-90 text-purple-600 px-12 py-6 rounded-lg transform animate-thank-you">
-            <h2 className="text-4xl font-bold text-center">Thank You! 🎉</h2>
-            <p className="text-xl text-center mt-2">
-              Your payment is on it's way{" "}
-            </p>
+                  duration: 0.7,
+                },
+              }}
+              className="bg-white bg-opacity-90 text-purple-600 px-12 py-6 rounded-lg transform animate-thank-you"
+            >
+              <h2 className="text-4xl font-bold text-center">Thank You! 🎉</h2>
+              <p className="text-xl text-center mt-2">
+                Your payment is on it's way{" "}
+              </p>
+            </motion.div>
           </motion.div>
-        </motion.div>
-      )}    </AnimatePresence>
+        )}{" "}
+      </AnimatePresence>
 
       {/* Flower Petals Effect */}
       {showConfetti && (
@@ -205,13 +212,14 @@ const FunInterface = () => {
         .animate-fall {
           position: absolute;
         }
-            .custom-gradient {
-    background: linear-gradient(180deg, 
-      rgb(0, 0, 0) 0%,
-      rgba(17, 0, 32, 0.95) 35%,
-      rgba(25, 0, 47, 0.85) 100%
-    );
-  }
+        .custom-gradient {
+          background: linear-gradient(
+            180deg,
+            rgb(0, 0, 0) 0%,
+            rgba(17, 0, 32, 0.95) 35%,
+            rgba(25, 0, 47, 0.85) 100%
+          );
+        }
       `}</style>
     </div>
   );

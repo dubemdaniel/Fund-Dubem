@@ -1,5 +1,6 @@
 'use client'
-import Image from "next/image";
+import { Analytics } from '@vercel/analytics/react'
+
 
 import FunInterface from "@/components/FunInterface";
 
@@ -9,7 +10,7 @@ export default function Home() {
       <main className=" ">
        <FunInterface/>
       </main>
-    
+      <Analytics />
     </div>
   );
 }
