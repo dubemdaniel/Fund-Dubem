@@ -11,6 +11,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        wixMadefor: ['var(--font-wix-madefor)'],
+       farro: "var(--font-farro), sans-serif",
+     },
     },
   },
   plugins: [],
