@@ -121,7 +121,7 @@ const FunInterface = () => {
 
                 <div className="flex justify-between items-center">
                   <span className="font-medium">Bank Name:</span>
-                  <span>Opay</span>
+                  <span>MONIE POINT</span>
                 </div>
 
                 <div className="flex justify-between items-center">
