@@ -104,7 +104,7 @@ const FunInterface = () => {
                 <div className="flex justify-between items-center">
                   <span className="font-medium">Account Number:</span>
                   <span>
-                    9065956504{" "}
+                    5563333342{" "}
                     <button
                       onClick={copyToClipboard}
                       className="p-1 hover:bg-gray-100 rounded-full transition-colors relative group"
